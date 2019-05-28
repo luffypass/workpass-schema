@@ -20,10 +20,10 @@ describe("schema/v1.0", () => {
     } = require("@govtechsg/open-attestation");
   });
 
-  it("is not valid with missing data", () => {
+  it("is valid with missing data", () => {
     const data = {};
     const signing = () => issueDocument(data, schema);
-    expect(signing).to.throw("Invalid document");
+    expect(signing).to.not.throw("Invalid document");
   });
 
   it("is not valid with additional data", () => {

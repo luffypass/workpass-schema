@@ -45,14 +45,6 @@
     },
     "recipient": {
       "type": "object",
-      "required": [
-        "fin",
-        "name",
-        "occupation",
-        "country",
-        "dob",
-        "maritalStatus"
-      ],
       "properties": {
         "fin": {
           "type": "string"
@@ -77,7 +69,6 @@
       }
     },
     "employer": {
-      "required": ["uen", "name", "sector"],
       "type": "object",
       "properties": {
         "uen": {
@@ -92,19 +83,5 @@
       }
     }
   },
-  "required": [
-    "cardPrintDate",
-    "passType",
-    "passStatus",
-    "expiryDate",
-    "legalTill",
-    "applicationDate",
-    "issueDate",
-    "renewalDate",
-    "isMultipleJourney",
-    "serial",
-    "recipient",
-    "employer"
-  ],
   "additionalProperties": false
 }

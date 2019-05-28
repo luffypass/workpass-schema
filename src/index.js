@@ -1,7 +1,7 @@
 const {
   getData,
   issueDocument: oaIssueDocument,
-  issueDocuments : oaIssueDocuments,
+  issueDocuments: oaIssueDocuments,
   addSchema,
   verifySignature,
   validateSchema,
@@ -12,7 +12,7 @@ const {
 /* eslint-disable global-require */
 // Disabling eslint for this because it doesn't make sense
 const schemas = {
-  "1.0": require("../schema/1.0/schema.json"),
+  "1.0": require("../schema/1.0/schema.json")
 };
 /* eslint-enable global-require */
 
