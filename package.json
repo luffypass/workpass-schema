@@ -1,6 +1,6 @@
 {
   "name": "@govtechsg/workpass-schema",
-  "version": "1.1.40",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/workpass-schema.js",
   "module": "dist/workpass-schema.esm.js",
@@ -58,12 +58,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OpenCerts/workpass-schema.git"
+    "url": "git+https://github.com/sgworkpass/workpass-schema.git"
   },
   "bugs": {
-    "url": "https://github.com/OpenCerts/workpass-schema/issues"
+    "url": "https://github.com/sgworkpass/workpass-schema/issues"
   },
-  "homepage": "https://github.com/OpenCerts/workpass-schema#readme",
+  "homepage": "https://github.com/sgworkpass/workpass-schema#readme",
   "publishConfig": {
     "access": "public"
   }
