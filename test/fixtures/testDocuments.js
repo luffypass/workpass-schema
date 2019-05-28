@@ -1,5 +1,11 @@
 const testDocuments = [
   {
+    issuers: [
+      {
+        name: "Ministry of Manpower",
+        documentStore: "0xd3aa3514e41c66c303a260913ab55bbb7ce23370"
+      }
+    ],
     cardPrintDate: "2018-11-13T00:00:00+00:00",
     passType: "Employment Pass",
     passStatus: "Live",
@@ -25,6 +31,12 @@ const testDocuments = [
     }
   },
   {
+    issuers: [
+      {
+        name: "Ministry of Manpower",
+        documentStore: "0xd3aa3514e41c66c303a260913ab55bbb7ce23370"
+      }
+    ],
     cardPrintDate: "2018-11-13T00:00:00+00:00",
     passType: "Employment Pass",
     passStatus: "Live",
