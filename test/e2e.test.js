@@ -51,17 +51,17 @@ describe("E2E Test", () => {
 
   it("can obfuscate fields (repeatedly)", () => {
     const obfuscatedCert = wpSchema.obfuscateFields(document, [
-      "recipient.dob",
-      "recipient.country"
+      "id",
+      "recipient.fin"
     ]);
     expect(obfuscatedCert).to.exist;
     expect(obfuscatedCert.privacy.obfuscatedData.length).to.be.equal(2);
-    expect(obfuscatedCert.data.recipient.dob).to.not.exist;
-    expect(obfuscatedCert.data.recipient.country).to.not.exist;
+    expect(obfuscatedCert.data.id).to.not.exist;
+    expect(obfuscatedCert.data.recipient.fin).to.not.exist;
 
     const moreObfuscation = wpSchema.obfuscateFields(
       obfuscatedCert,
-      "isMultipleJourney"
+      "pass.isMultipleJourney"
     );
     expect(moreObfuscation.privacy.obfuscatedData.length).to.be.equal(3);
     expect(moreObfuscation.data.isMultipleJourney).to.not.exist;
