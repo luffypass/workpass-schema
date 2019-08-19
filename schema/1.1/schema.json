@@ -1,0 +1,144 @@
+{
+  "$id": "wpSchema/v1.1",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "issuers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "documentStore": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "documentStore"
+        ],
+        "additionalProperties": true
+      },
+      "minItems": 1
+    },
+    "pass": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "description": "The type of pass",
+          "type": "string",
+          "enum": [
+            "Employment Pass",
+            "Dependent Pass"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "Live"
+          ]
+        },
+        "expiryDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "legalTillDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "applicationDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "issueDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "renewalDate": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "isMultipleJourney": {
+          "type": "boolean"
+        }
+      }
+    },
+    "recipient": {
+      "type": "object",
+      "properties": {
+        "photo": {
+          "type": "string",
+          "contentEncoding": "base64",
+          "contentMediaType": "image/png"
+        },
+        "fin": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "gender": {
+          "type": "string"
+        },
+        "occupation": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "dob": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "maritalStatus": {
+          "type": "string",
+          "enum": [
+            "Married",
+            "Single",
+            "Divorced"
+          ]
+        },
+        "address": {
+          "type": "object",
+          "properties": {
+            "postalCode": {
+              "type": "integer"
+            },
+            "postOfficeBoxNumber": {
+              "type": "string"
+            },
+            "streetAddress": {
+              "type": "string"
+            }
+          }
+        },
+        "sponsoringPass": {
+          "type": "string"
+        }
+      }
+    },
+    "employer": {
+      "type": "object",
+      "properties": {
+        "uen": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "sector": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": [
+    "id", "issuers", "pass", "recipient"
+  ],
+  "additionalProperties": false
+}
