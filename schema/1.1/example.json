@@ -8,6 +8,7 @@
   ],
   "pass": {
     "type": "Employment Pass",
+    "sponsoringPass": "G1234567B",
     "status": "Live",
     "expiryDate": "2018-11-14T00:00:00+00:00",
     "legalTillDate": "2018-11-14T00:00:00+00:00",
@@ -28,8 +29,7 @@
       "postalCode": 123456,
       "postOfficeBoxNumber": "#03-08",
       "streetAddress": "Block 123 toa payoh ave 4"
-    },
-    "sponsoringPass": "G1234567B"
+    }
   },
   "employer": {
     "uen": "123981298391",

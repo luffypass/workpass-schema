@@ -37,6 +37,9 @@
             "Dependent Pass"
           ]
         },
+        "sponsoringPass": {
+          "type": "string"
+        },
         "status": {
           "type": "string",
           "enum": [
@@ -116,9 +119,6 @@
               "type": "string"
             }
           }
-        },
-        "sponsoringPass": {
-          "type": "string"
         }
       }
     },
