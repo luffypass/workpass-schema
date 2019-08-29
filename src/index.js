@@ -4,7 +4,7 @@ const {
   issueDocuments: oaIssueDocuments,
   addSchema,
   verifySignature,
-  validateSchema,
+  validateSchema: oaValidateSchema,
   obfuscateDocument,
   MerkleTree
 } = require("@govtechsg/open-attestation");
@@ -12,11 +12,11 @@ const {
 /* eslint-disable global-require */
 // Disabling eslint for this because it doesn't make sense
 const schemas = {
-  "1.0": require("../schema/1.0/schema.json")
+  "1.1": require("../schema/1.1/schema.json")
 };
 /* eslint-enable global-require */
 
-const defaultSchema = schemas["1.0"];
+const defaultSchema = schemas["1.1"];
 
 // Start - Initialise all valid schema
 addSchema(Object.values(schemas));
@@ -25,6 +25,8 @@ addSchema(Object.values(schemas));
 const issueDocument = data => oaIssueDocument(data, defaultSchema);
 
 const issueDocuments = dataArray => oaIssueDocuments(dataArray, defaultSchema);
+
+const validateSchema = data => oaValidateSchema(data, defaultSchema);
 
 const obfuscateFields = (document, fields) =>
   obfuscateDocument(document, fields);
