@@ -1,5 +1,5 @@
 # Workpass Schema v1.1
-This library supplies the schemas used for workpass 2.0, in the form of [json schemas](http://json-schema.org)
+This library supplies the schemas used for SGworkpass 2.0, in the form of [json schemas](http://json-schema.org)
 
 ## Installation
 
