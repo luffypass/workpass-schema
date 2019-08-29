@@ -34,7 +34,8 @@
           "type": "string",
           "enum": [
             "Employment Pass",
-            "Dependent Pass"
+            "Dependent Pass",
+            "Long Term Visit Pass"
           ]
         },
         "sponsoringPass": {
