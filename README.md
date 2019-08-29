@@ -1,5 +1,5 @@
-# Workpass Schema v1.0
-This library supplies the schemas used for workpass 2.0, in the form of [json schemas](http://json-schema.org)
+# Workpass Schema v1.1
+This library supplies the schemas used for SGworkpass 2.0, in the form of [json schemas](http://json-schema.org)
 
 ## Installation
 
@@ -13,11 +13,23 @@ npm install @govtechsg/workpass-schema
 
 If you are writing a **document issuer**: you probably want to [issue a document](#issuing-a-document) or [issue multiple documents](#issue-multiple-documents)
 
+If you are writing a **document verifier or viewer**: you probably want to [issue a document](#issuing-a-document) or [issue multiple documents](#issue-multiple-documents)
+
 If you are writing a **document verifier or viewer**: you probably want to
-1. [validate that a document is well-formed](#validate-schema)
-1. [verify that a document has not been tampered with](#verifying-document-signature) 
-1. [retrieve document contents](#retrieving-document-contents)
-1. [obfuscate fields](#obfuscating-fields-in-a-document)
+- [Workpass Schema v1.1](#workpass-schema-v11)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Using OpenCerts](#using-opencerts)
+    - [Validate Schema](#validate-schema)
+    - [Verifying Document Signature](#verifying-document-signature)
+    - [Issue a Document](#issue-a-document)
+    - [Issue Multiple Documents](#issue-multiple-documents)
+    - [Retrieving Document contents](#retrieving-document-contents)
+    - [Obfuscating Fields in a Document](#obfuscating-fields-in-a-document)
+  - [Developers](#developers)
+    - [Test](#test)
+    - [Build](#build)
+    - [Related Projects](#related-projects)
 
 ### Using OpenCerts
 ```javascript
