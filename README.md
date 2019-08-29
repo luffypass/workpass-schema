@@ -13,6 +13,8 @@ npm install @govtechsg/workpass-schema
 
 If you are writing a **document issuer**: you probably want to [issue a document](#issuing-a-document) or [issue multiple documents](#issue-multiple-documents)
 
+If you are writing a **document verifier or viewer**: you probably want to [issue a document](#issuing-a-document) or [issue multiple documents](#issue-multiple-documents)
+
 If you are writing a **document verifier or viewer**: you probably want to
 - [Workpass Schema v1.1](#workpass-schema-v11)
   - [Installation](#installation)
