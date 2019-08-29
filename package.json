@@ -1,6 +1,6 @@
 {
   "name": "@govtechsg/workpass-schema",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "dist/workpass-schema.js",
   "module": "dist/workpass-schema.esm.js",
