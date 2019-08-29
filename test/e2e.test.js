@@ -51,12 +51,12 @@ describe("E2E Test", () => {
 
   it("can obfuscate fields (repeatedly)", () => {
     const obfuscatedCert = wpSchema.obfuscateFields(document, [
-      "id",
+      "recipient.dob",
       "recipient.fin"
     ]);
     expect(obfuscatedCert).to.exist;
     expect(obfuscatedCert.privacy.obfuscatedData.length).to.be.equal(2);
-    expect(obfuscatedCert.data.id).to.not.exist;
+    expect(obfuscatedCert.data.recipient.dob).to.not.exist;
     expect(obfuscatedCert.data.recipient.fin).to.not.exist;
 
     const moreObfuscation = wpSchema.obfuscateFields(
